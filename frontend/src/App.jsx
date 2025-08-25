@@ -9,7 +9,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:5000/api/shorten", {
+      const { data } = await axios.post("https://shorturl-qz82.onrender.com/api/shorten", {
         originalUrl: longUrl,
       });
       setShortUrl(data.shortUrl);
